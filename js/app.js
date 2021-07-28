@@ -1,17 +1,21 @@
 'use strict';
+let conter =0 ;
 
-/* let varName = prompt("what is your name ?");
-alert("willcome "+varName);
-console.log("his name is " + varName); */
 /*
+ let varName = prompt("what is your name ?");
+alert("willcome "+varName);
+console.log("his name is " + varName); 
+function ageInput(){
 let userAge = prompt('Please enter your age');
  if(parseInt (userAge) <= 18) {
    alert('You are not  allowed to be here');
-   correct++;
+   conter++;
  } else {
    alert('Welcome');
  }
-
+}
+ageInput();
+function mailInput(){
        let varMail = prompt("your are mail ?").toLocaleUpperCase();
 switch (varMail){
 case "YAS" :
@@ -22,12 +26,15 @@ case "YAS" :
         alert ("willcome");
         console.log(varName + "is mail");  
         break ;
-        correct++;
+        conter++;
         default :
         alert ("sorry this game for mail only") ;
         break ;
        }
+      }
+      mailInput();
 
+function cuntInput(){
        let varCant = prompt("your are From asia ?").toLocaleUpperCase();
 switch (varCant){
 case "YAS" :
@@ -38,13 +45,15 @@ case "YAS" :
         alert ("willcome");
         console.log(varName + "is from asia");  
         break ;
-        correct++;
+        conter++;
         default :
         alert ("sorry this game for asia only") ;
         break ;
 }
+}
+cuntInput();
 
-
+function loveInput(){
 let question = prompt('you are love gaming ?');
 while(question !== 'yes' && question !== 'y' && question !== 'no' && question !== 'n') {
     question = prompt('Please enter yes or no');
@@ -52,49 +61,61 @@ while(question !== 'yes' && question !== 'y' && question !== 'no' && question !=
   if(question === 'yes' || question === 'y') {
    
     alert('hope to you engoy');
-    correct++;
+    conter++;
 }
  
     else{
    
     alert("not your intrest ");
   }
+}
+loveInput();
 
-*/
-/*
-
-  let varcop = prompt('how many hr play in day ?');
-  let y = Number(varcop);
-  let answer = 4;
-  for (var i = 0; i < 4; i++) {
-
- if(answer === y) {
-   alert('the correct answer ');
-   correct++; 
+function hrInput(){
+let attempt = 4;
+let answer = 4;
+  for (let i = 0; i < attempt ; i++) {
+  let varcop = Number(prompt('how many hr play in day ?'));
+  
+ if( varcop === answer) {
+   alert('the correct  answer ');
+   conter++; 
    break;
  }
-  else if (y < answer)   {
-    y = parseInt(prompt('Too Low, try again'));
+  else if (varcop < answer)   {
+    alert('Too Low, try again');
  }
 
  else  {
-    y = parseInt(prompt(' too high, try again')); 
+  alert(' too high, try again'); 
   }
-  alert('The correct answer was 4');
 }
+alert('The correct answer was 4');
+}
+hrInput();
 
 */
-let multiValues = ["11" , "12" , "1" , "2" , "3" ];
-for (let z = 0; z < 6; z++) {
-    let ocloc = prompt ("the fav time to play gaming") ;
-    if (multiValues.includes(ocloc)) {
+function timeInput(){
+let multiValues = ['11' , '12' , '1' , '2' , '3'];
+let ocloc = prompt ("the fav time to play gaming") ;
+outerloop:  for (let z = 0; z < 6; z++) {
+  for (let i = 0; i < multiValues.length; i++) {
+  
+    if (ocloc === multiValues[i]) {
         alert("you are correct" ) ;
-        correct++;
-        break ;
+        conter++;
+        break outerloop ;
     }  
-        else {
-            alert("try agin")
-        }}
-        alert('score = ' + correct + '/7');
- 
+         else {
+             alert("try agin");
+          
+          }
+          ocloc = prompt ("the fav time to play gaming") ;
+      }
+    }
+  }
+  timeInput();
+alert('score = ' + conter + '/7');
 
+let ocloc = prompt ("willcome to wib site") ;
+  
