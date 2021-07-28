@@ -1,5 +1,5 @@
 'use strict';
-let conter =0 ;
+let conter = 0;
 
 /*
  let varName = prompt("what is your name ?");
@@ -95,27 +95,26 @@ alert('The correct answer was 4');
 hrInput();
 
 */
-function timeInput(){
-let multiValues = ['11' , '12' , '1' , '2' , '3'];
-let ocloc = prompt ("the fav time to play gaming") ;
-outerloop:  for (let z = 0; z < 6; z++) {
-  for (let i = 0; i < multiValues.length; i++) {
-  
-    if (ocloc === multiValues[i]) {
-        alert("you are correct" ) ;
+function timeInput() {
+  let multiValues = ["night"];
+  let ocloc = prompt("the fav time to play gaming");
+ outerloop : for (let z = 0; z < 5; z++) {
+    for (let i = 0; i < multiValues.length; i++) {
+
+     if (ocloc == multiValues[i]) {
+        alert("you are correct");
         conter++;
         break outerloop ;
-    }  
-         else {
-             alert("try agin");
-          
-          }
-          ocloc = prompt ("the fav time to play gaming") ;
       }
+      else {
+        alert("try agin");
+        ocloc = prompt("the fav time to play gaming");
+      }
+      
     }
   }
-  timeInput();
+}
+timeInput();
 alert('score = ' + conter + '/7');
 
-let ocloc = prompt ("willcome to wib site") ;
-  
+let ocloc = prompt("willcome to wib site");
