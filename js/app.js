@@ -1,7 +1,7 @@
 'use strict';
 let conter = 0;
 
-/*
+
  let varName = prompt("what is your name ?");
 alert("willcome "+varName);
 console.log("his name is " + varName); 
@@ -94,7 +94,7 @@ alert('The correct answer was 4');
 }
 hrInput();
 
-*/
+
 function timeInput() {
   let multiValues = ["night"];
   let ocloc = prompt("the fav time to play gaming");
