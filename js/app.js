@@ -16,38 +16,38 @@ let userAge = prompt('Please enter your age');
 }
 ageInput();
 function mailInput(){
-       let varMail = prompt("your are mail ?").toLocaleUpperCase();
+       let varMail = prompt("do i love gaming ?").toLocaleUpperCase();
 switch (varMail){
 case "YAS" :
     alert ("willcome");
-    console.log(varName + "is mail");
+    // console.log(varName + "is mail");
     break ;
    case "Y" :
         alert ("willcome");
-        console.log(varName + "is mail");  
+        // console.log(varName + "is mail");  
         break ;
         conter++;
         default :
-        alert ("sorry this game for mail only") ;
+        alert ("try agin") ;
         break ;
        }
       }
       mailInput();
 
 function cuntInput(){
-       let varCant = prompt("your are From asia ?").toLocaleUpperCase();
+       let varCant = prompt("I'm From asia ?").toLocaleUpperCase();
 switch (varCant){
 case "YAS" :
     alert ("willcome");
-    console.log(varName + "is from asia");
+    // console.log(varName + "is from asia");
     break ;
    case "Y" :
         alert ("willcome");
-        console.log(varName + "is from asia");  
+        // console.log(varName + "is from asia");  
         break ;
         conter++;
         default :
-        alert ("sorry this game for asia only") ;
+        alert ("wrong , i'm from asia") ;
         break ;
 }
 }
@@ -97,7 +97,7 @@ hrInput();
 
 function timeInput() {
   let multiValues = ["night"];
-  let ocloc = prompt("the fav time to play gaming");
+  let ocloc = prompt("the fav time me play gaming");
  outerloop : for (let z = 0; z < 5; z++) {
     for (let i = 0; i < multiValues.length; i++) {
 
@@ -108,7 +108,7 @@ function timeInput() {
       }
       else {
         alert("try agin");
-        ocloc = prompt("the fav time to play gaming");
+        ocloc = prompt("the fav time me play gaming");
       }
       
     }
