@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=G, initial-scale=1.0">
-    <title>GAME</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=G, initial-scale=1.0">
+  <title>GAME</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <header>
-        <h1 style="color: blue;">game</h1>
+  <header>
+    <h1>game</h1>
 
-        <nav>
-          <a href="">Home</a>
-          <a href="">product</a>
-          <a href="">about</a>
-          <a href="">contact</a>
-        </nav>
-      </header>
-      <main>
-    <p style="font-size:large;border: rgb(19, 18, 19);"> <b>I'm general Mechanical engineer</b> </p> 
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="game">
+
+    <nav>
+      <a href="">Home</a>
+      <a href="">product</a>
+      <a href="">about</a>
+      <a href="">contact</a>
+    </nav>
+  </header>
+  <main>
+   
+    <p style="font-size:large;border: rgb(19, 18, 19);"> <b>I'm general Mechanical engineer</b> </p>
 
     <p> have one year experiance in constraction electromechanical :</p>
 
-      <i>  shop drawing and site engineer in new princess basma hospital </i>
-      <ul>1-HVAC SYSTEM</ul>
-      <ul>2-FIRE FIGHTING SYSTEM</ul>
-      <ul>3-WATER SUPPLY SYSTEM</ul>
-      <ul>4-DARINAGE SYSTEM</ul>
-      <ul>5-LPG SYSTEM</ul>
-      <ul>6-MEDICAL GAS SYSTEM</ul>
-      <ul>7-PERFORATED PIPE</ul>
-      <ul>8-STEAM SYSTEM</ul>
-      <ul>9-STORM WATER SYSTE </ul>
+    <i> shop drawing and site engineer in new princess basma hospital </i>
+  
+    <li>
+    <ul> 1-HVAC SYSTEM </ul>
+    <ul>2-FIRE FIGHTING SYSTEM</ul>
+    <ul>3-WATER SUPPLY SYSTEM</ul>
+    <ul>4-DARINAGE SYSTEM</ul>
+    <ul>5-LPG SYSTEM</ul>
+    <ul>6-MEDICAL GAS SYSTEM</ul>
+    <ul>7-PERFORATED PIPE</ul>
+    <ul>8-STEAM SYSTEM</ul>
+    <ul>9-STORM WATER SYSTE </ul>
+  </li>
 
-    
-      </hr>
-    </p> <blockquote style="color: mediumturquoise;"> <em> i will move togather to recive your gols </em> </blockquote> </p>
-     
+
+    </hr>
+    </p>
+    <blockquote style="color: mediumturquoise;"> <em> i will move togather to recive your gols </em> </blockquote>
+    </p>
+
     <p> <strong> Top 10 gaming </strong>
     <ol>Animal Crossing</ol>
     <ol>Crossy Road</ol>
@@ -51,18 +64,19 @@
     </ol>
     <ol>Mario Kart 8 Deluxe</ol>
     <ol>Mario Kart Live: Home Circuit</ol>
-    
-    
-    
-    
-    
-    </p>
-     
-      </main>
-      <footer>
 
-      </footer>
-<script src="./js/app.js"></script>
-    
+
+
+
+
+    </p>
+
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./js/app.js"></script>
+
 </body>
+
 </html>

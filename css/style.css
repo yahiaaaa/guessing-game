@@ -1,1 +1,28 @@
 body {background-color: coral;}
+body {
+    height: 2000px
+  }
+  li {
+width: 200px;
+height: 100ps;
+background-color: brown;
+padding: 20px;
+overflow: scroll ;
+float: right  ;
+
+  }
+
+nav {
+    float: right;
+}
+image {
+    float: left;
+}
+ol {
+    height: 100%;
+    position: relative;
+    margin-top: 10px;
+    background-color: chartreuse;
+   
+
+}

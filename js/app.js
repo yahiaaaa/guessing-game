@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 let conter = 0;
 
 
@@ -118,3 +118,4 @@ timeInput();
 alert('score = ' + conter + '/7');
 
 let ocloc = prompt("willcome to wib site");
+*/
